@@ -1,0 +1,19 @@
+{% extends "tv.html" %}
+{% block title %}Daily Questions for {{date}}{% endblock %}
+{% block head %}
+    {{ super() }}
+{% endblock %}
+{% block content %}
+<div class="school-daily-questions">
+	<span class="header">Daily Questions for {{date}}</span>
+	<div class="school-question-blocks">
+		{% for key_date, value in daily_questions.items() %}
+		<div class="school-question-block data">
+			<div class="school-question-block-date">{{key_date}}</div>
+			<div class="school-question-block-question">{{value["question"]}}</div>
+			<div class="school-question-block-answer">{{value["answer"]}}</div>
+		</div>
+		{% endfor %}
+	</div>
+</div>
+{% endblock %}

@@ -1,0 +1,53 @@
+{% extends "tv.html" %}
+{% block title %}{% endblock %}
+{% block head %}
+    {{ super() }}
+    <style type="text/css">
+        .important { color: #336699; }
+    </style>
+{% endblock %}
+{% block content %}
+	<span class="header">Which date?</span>
+	<div class="school-choice">
+		<div class="schedule-blocks">
+			<div class="subheader">Daily</div>
+			<div class="school-choice-block" id="april_may">
+				<a href="daily/april_may">April - May</a>
+			</div>
+			<div class="school-choice-block" id="june_july">
+				<a href="daily/june_july">June - July</a>
+			</div>
+			<div class="school-choice-block" id="sept_oct">
+				<a href="daily/sept_oct">September - October</a>
+			</div>
+			<div class="school-choice-block" id="nov_dec">
+				<a href="daily/nov_dec">November - December</a>
+			</div>
+			<div class="school-choice-block" id="jan_feb">
+				<a href="daily/jan_feb">January - February</a>
+			</div>
+		</div>
+
+		<div class="schedule-blocks">
+			<div class="subheader">Exams</div>
+			<div class="school-choice-block" id="april_may">
+				<a href="exam/april_may">April - May</a>
+			</div>
+			<div class="school-choice-block" id="june_july">
+				<a href="exam/june_july">June - July</a>
+			</div>
+			<div class="school-choice-block" id="sept_oct">
+				<a href="exam/sept_oct">September - October</a>
+			</div>
+			<div class="school-choice-block" id="nov_dec">
+				<a href="exam/nov_dec">November - December</a>
+			</div>
+			<div class="school-choice-block" id="jan_feb">
+				<a href="exam/jan_feb">January - February</a>
+			</div>
+		</div>
+	</div>
+	<div class="school-choice-blocks">
+
+	</div>
+{% endblock %}

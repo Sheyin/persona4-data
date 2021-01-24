@@ -1,0 +1,24 @@
+{% extends "tv.html" %}
+{% block title %}{% endblock %}
+{% block head %}
+    {{ super() }}
+{% endblock %}
+{% block content %}
+	<div class="search">
+		<span class="header">{{ title }}</span><br />
+		<form action = "/persona" method="get">
+			Persona to search for: <input name="persona" id="persona" type="text" />
+			<input type="submit" value="Submit" />
+		</form>
+	</div>
+
+	{% if result %}
+	<div class="result">
+		{{ result | safe }}
+	</div>
+	{% endif %}
+
+{% endblock %}
+
+
+

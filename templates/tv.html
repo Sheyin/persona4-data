@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- {% block head %} -->
+	<link rel="stylesheet" href="../static/tv.css">
+	<!-- <link rel="stylesheet" href="url_for('static', filename='tv.css')"> -->
+    <title>{% block title %}{% endblock %}</title>
+	<!-- {% endblock %} -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="television">
+		<div class="television-inner-box">
+			<div class="television-inner-box-filling">
+				<div class="monitor">
+					{% block content %}{% endblock %}
+				</div>
+			</div> <!-- Television-inner-box-filling-->
+		</div> <!-- Television-inner-box-->
+		<div class="side-controls-box">
+			<div class="knob-outer">
+				<div class="knob-inner"></div>
+			</div>
+			<div class="navigation-controls">
+				<div class="navigation">
+					<p class="nav-option">
+						<a href="/school">School Questions</a>
+					</p>
+
+					<p class="nav-option">
+						<a href="/links">Social Links</a>
+					</p>
+					<p class="nav-option">
+						<a href="/lunch">Lunch</a>
+					</p>
+					<p class="nav-option">
+						<a href="/calculator">Calculator</a>
+					</p>
+					<p class="nav-option" id="search">
+						<a href="/persona">Persona Search</a>
+					</p>
+					<!-- 
+						<p class="nav-option" id="quests">
+							<a href="/quests">Quests</a>
+						</p>
+					-->
+						
+					
+				</div> <!-- Navigation-->
+			</div> <!-- Navigation controls -->
+		</div> <!-- Side controls box-->
+	</div> <!-- Television -->
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+{% extends "tv.html" %}
+{% block title %}{% endblock %}
+{% block head %}
+	{{ super() }}
+{% endblock %}
+{% block content %}
+<div class="link-info">
+	<span class="header">{{name}}</span><br />
+	<span class="subheader">Arcana: {{arcana}}</span><br />
+	<div class="schedule">
+		<span class="subheader">Schedule:</span><br />
+		<div class="schedule-data data">
+			{% for paragraph in schedule %}
+			{{paragraph}}<br />
+			{% endfor %}
+		</div>
+	</div>
+	<div class="link-data">
+		{% for day in data %}
+		<div class="day">
+			<div class="subheader">{{day["header"]}}</div><br/>
+			<div class="day-data data">
+				{% for paragraph in day["data"] %}
+    			{{paragraph}}<br />
+				{% endfor %}
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+</div>
+{% endblock %}
+
+
+

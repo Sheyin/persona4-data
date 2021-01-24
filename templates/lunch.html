@@ -1,0 +1,28 @@
+{% extends "tv.html" %}
+{% block title %}{% endblock %}
+{% block head %}
+    {{ super() }}
+{% endblock %}
+{% block content %}
+	<div class="lunch">
+		<span class="header">{{ title }}</span>
+		<div class="lunch-data data">
+			{% for paragraph in lunches %}
+			{{paragraph}}<br />
+			{% endfor %}
+		</div>
+	</div>
+
+	<div class="lunch-dates">
+		<span class="header">{{ date_title }}</span>
+		<div class="lunch-dates-data columns">
+			{% for date in lunch_dates %}
+			{{date}}<br />
+			{% endfor %}
+		</div>
+	</div>
+
+{% endblock %}
+
+
+

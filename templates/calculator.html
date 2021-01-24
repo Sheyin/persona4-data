@@ -1,0 +1,14 @@
+{% extends "tv.html" %}
+{% block title %}Fusion Calculator{% endblock %}
+{% block head %}
+    {{ super() }}
+    <style type="text/css">
+        .important { color: #336699; }
+    </style>
+{% endblock %}
+{% block content %}
+	<iframe id="fusionCalculatorFrame"
+		title="Fusion Calculator"
+		src="https://arantius.github.io/persona-fusion-calculator/4golden.html#/list/name">
+	</iframe>
+{% endblock %}

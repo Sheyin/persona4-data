@@ -1,0 +1,30 @@
+lunch = {
+    "header": "Persona 4 Perfect Boxed Lunch Combinations",
+    "data": [
+        "Broiled Fish: Wrap it tightly (Yukiko)",
+        "California Rolls: Mix and cool simultaneously (Naoto)",
+        "Carrot & Burdock Root Kinpira: Add Soy Sauce and Mirin (Yumi)",
+        "Chakin Sushi: Thinned Eggs (Rise)",
+        "Cream Stew: Dump in all the cold Milk (Rise)",
+        "Croquettes Curry: High Simmer",
+        "Daigaku-Imo: Deep Fry (Yukiko)",
+        "Fried Chicken: Potato Starch (Unknown - Naoki? Daisuke? Chie?)",
+        "Ginger Pork: Score with a Knife",
+        "Grilled Fish: Strong Heat, from a distance",
+        "Gyoza: Olive Oil",
+        "Hamburgers: Cut a hole and look for Juice",
+        "Kakuni: Mirin, Sugar & Sake",
+        "Marinated Spinach: Strain it",
+        "Long-Simmered Meat Stew: Simmer with a Dropped Lid (Yosuke)",
+        "Mentaiko Pasta: Mayonnaise (Naoto)",
+        "Oden: Keep on a Low Flame, Don't Boil (Yosuke)",
+        "Potato Salad: Smash while still hot (Yukiko)",
+        "Pudding: Vanilla extract (Kanji)",
+        "Sweet & Sour Pork: Potato Starch",
+        "Tonkatsu: Flour, Egg, than Panko",
+        "Vichyssoise: Add lots of Milk",
+        "Yakiniku Bento: Use Soy Sauce (Chie)"
+    ],
+    "dates_header": "Some dates when lunch is available (incomplete)",
+    "dates_data": ["April 25", "May 12", "May 31", "September 4", "September 11", "September 21", "September 26", "September 29", "October 25", "November 1", "January 11 (1/12?)"]
+}

@@ -1,0 +1,214 @@
+$yellow-top: #ffd200;
+$yellow-bottom: #fff100;
+$yellow: #feed01;
+$tv-color: #000000;
+$box-shadow: #877900;
+
+html {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	background-image: url("p4_tv_rainbow_strip.jpg");
+	background-repeat: repeat-y;
+	background-size: cover;
+	//background: linear-gradient($yellow-top, $yellow-bottom);
+	//background-repeat: no-repeat;
+	height: 100vh;
+	width: 100%;
+	padding: 20px;
+	margin-top: none;
+	overflow: hidden;
+	font-family: "Libre Franklin", sans-serif;
+}
+
+.television {
+	min-width: 90%;
+	max-width: 95%;
+	height: 90%;
+	box-shadow: -10px -10px 5px $box-shadow, 10px 10px 5px $box-shadow;
+	border: solid $tv-color;
+	border-width: 25px 20px 20px 17px;
+	padding: 10px;
+	border-radius: 9%;
+	background-color: $yellow;
+	padding: 20px auto 20px 20px;
+	position: fixed;
+	top: 20px;
+	left: 20px;
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: nowrap;
+	//background-color: blue;
+}
+
+.television-inner-box {
+	min-width: 70%;
+	max-width: 80%;
+	height: 90%;
+	//background-color: $tv-color;
+	background-color: $tv-color;
+	box-shadow: 10px -5px 3px $box-shadow;
+	border: solid $tv-color;
+	border-width: 5px 20px 5px 2s0px;
+	padding: 20px;
+	border-radius: 9%;
+	//position: relative;
+	float: left;
+}
+
+.television-inner-box-filling {
+	width: 95%;
+	height: 95%;
+	margin: auto;
+	border-top: 5px solid $tv-color;
+	border-left: 10px solid $tv-color;
+	border-right: 5px solid $tv-color;
+	border-bottom: 10px solid $tv-color;
+	border-radius: 25%;
+	background-color: $yellow;
+	z-index: 1;
+}
+
+.monitor {
+	width: 90%;
+	height: 90%;
+	text-align: center;
+	margin: auto;
+	position: relative;
+	top: 20px;
+	overflow-y: scroll;
+}
+
+.monitor::-webkit-scrollbar {
+	display: none;
+}
+
+iframe {
+	border-radius: 20%;
+	width: 100%;
+	height: 630px;
+	margin: auto;
+	border: 0;
+	//border-top: 7px solid $tv-color;
+	//border-left: 10px solid $tv-color;
+	//border-right: 10px solid $tv-color;
+	//border-bottom: 7px solid $tv-color;
+}
+
+.side-controls-box {
+	height: 93%;
+	z-index: 3;
+	float: left;
+	padding: 1px;
+	//position: static;
+	//position: relative;
+	//top: -685px;
+	//left: 900px;
+	background-color: $tv-color;
+	border: 10px solid black;
+	border-radius: 15%;
+	margin-left: 20px;
+	margin-right: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	//flex-wrap: nowrap;
+}
+
+.knob-outer {
+	min-width: 130px;
+	min-height: 130px;
+	border: 10px solid $yellow;
+	border-radius: 50%;
+	//position: relative;
+	//top: 20px;
+	//left: 15px;
+	margin: 20px 20px auto 20px;
+}
+
+.navigation {
+	background-color: $yellow;
+	//position: relative;
+	//top: 60px;
+	margin: 10% 10px 20px 10px;
+	height: 52vh;
+	border-radius: 15%;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	//flex-grow: 2;
+	//flex-basis: 90%;
+}
+
+.header {
+	font-size: 2em;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 5vh;
+	margin-bottom: 3vh;
+}
+
+.subheader {
+	font-size: 1.5em;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 2vh;
+}
+
+.school-choice {
+	display: flex;
+	text-align: left;
+	justify-content: space-between;
+	margin-top: 20%;
+}
+
+p {
+	margin-left: 0px;
+	font-size: 1.3em;
+}
+
+.data {
+	text-align: left;
+	margin-left: 20px;
+	margin-right: 20px;
+	font-size: 1.3em;
+}
+
+.columns {
+	//margin-left: 20%;
+	margin-top: 10vh;
+	column-count: 2;
+	column-width: 100%;
+	font-size: 1.3em;
+}
+
+a {
+	text-decoration: none;
+}
+
+.unknown {
+	margin-top: 20%;
+}
+
+.persona-info-table {
+	min-width: 650px;
+	text-align: center;
+	background: #5c5c5c;
+	border: 2px solid #ffe600;
+	border-radius: 10px;
+	font-size: 75%;
+	font-family: verdana;
+	margin: auto;
+}
+
+form {
+	margin-top: 5vh;
+	margin-bottom: 5vh;
+}
+
+#quests {
+	display: none;
+}

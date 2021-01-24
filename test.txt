@@ -1,0 +1,303 @@
+
+C:\Repos\persona4-data>set FLASK_APP=main.py 
+
+C:\Repos\persona4-data>flask run 
+ * Serving Flask app "main.py"
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+persona: 
+No persona given
+persona: Izanagi
+Received: Izanagi
+format: Izanagi
+<table align="center" style="min-width:650px;text-align:center; background: #222; border:2px solid #FFE600; border-radius:10px; font-size:75%; font-family:verdana;">
+<tbody><tr>
+<td>
+<table cellpadding="0" cellspacing="0" style="width:100%;background:transparent">
+<tbody><tr>
+<td>
+<table class="customtable" width="100%">
+<tbody><tr>
+<th style="background: #FFE600;color: #000"><a href="/wiki/Arcana" title="Arcana"><span style="color:#000">Arcana</span></a>
+</th>
+<th style="background: #FFE600;color: #000" width="50px">Level
+</th>
+<td rowspan="2" style="padding:0" width="324px">
+<table cellpadding="0" cellspacing="2" style="background:transparent;font-size:11px;font-family:monospace;letter-spacing:-1px;line-height:0.8">
+<tbody><tr>
+<td style="color:#ffdf2d">Strength
+</td>
+<td style="text-align:right;padding:0 3px" width="17px">3
+</td>
+<td style="border-radius:10px;background-color:#000;background:linear-gradient(90deg, #2c2a46, #000);width:240.6px"><div style="overflow:hidden"><div style="float:left;border-top:5px solid #ffff85;width:7.2px"></div><div style="float:left;border-top:5px solid transparent;width:230.4px"></div></div>
+</td></tr>
+<tr>
+<td style="color:#ffdf2d">Magic
+</td>
+<td style="text-align:right;padding:0 3px" width="17px">2
+</td>
+<td style="border-radius:10px;background-color:#000;background:linear-gradient(90deg, #2c2a46, #000);width:240.6px"><div style="overflow:hidden"><div style="float:left;border-top:5px solid #ffff85;width:4.8px"></div><div style="float:left;border-top:5px solid transparent;width:232.8px"></div></div>
+</td></tr>
+<tr>
+<td style="color:#ffdf2d">Endurance
+</td>
+<td style="text-align:right;padding:0 3px" width="17px">2
+</td>
+<td style="border-radius:10px;background-color:#000;background:linear-gradient(90deg, #2c2a46, #000);width:240.6px"><div style="overflow:hidden"><div style="float:left;border-top:5px solid #ffff85;width:4.8px"></div><div style="float:left;border-top:5px solid transparent;width:232.8px"></div></div>
+</td></tr>
+<tr>
+<td style="color:#ffdf2d">Agility
+</td>
+<td style="text-align:right;padding:0 3px" width="17px">3
+</td>
+<td style="border-radius:10px;background-color:#000;background:linear-gradient(90deg, #2c2a46, #000);width:240.6px"><div style="overflow:hidden"><div style="float:left;border-top:5px solid #ffff85;width:7.2px"></div><div style="float:left;border-top:5px solid transparent;width:230.4px"></div></div>
+</td></tr>
+<tr>
+<td style="color:#ffdf2d">Luck
+</td>
+<td style="text-align:right;padding:0 3px" width="17px">2
+</td>
+<td style="border-radius:10px;background-color:#000;background:linear-gradient(90deg, #2c2a46, #000);width:240.6px"><div style="overflow:hidden"><div style="float:left;border-top:5px solid #ffff85;width:4.8px"></div><div style="float:left;border-top:5px solid transparent;width:232.8px"></div></div>
+</td></tr>
+</tbody></table>
+</td></tr>
+<tr>
+<td style="background:#000;color:#fff"><a href="/wiki/Fool_Arcana" title="Fool Arcana">Fool</a>
+</td>
+<td style="background:#000;color:#fff">1
+</td></tr></tbody></table>
+<table class="customtable" width="100%">
+<tbody><tr>
+<th style="background: #FFE600;color: #000">Inherit
+</th>
+<th style="background: #FFE600;color: #000">Reflects
+</th>
+<th style="background: #FFE600;color: #000">Absorbs
+</th>
+<th style="background: #FFE600;color: #000">Block
+</th>
+<th style="background: #FFE600;color: #000">Resists
+</th>
+<th style="background: #FFE600;color: #000">Weak
+</th></tr>
+<tr>
+<td style="background:#000;color:#fff">Electricity
+</td>
+<td style="background:#000;color:#fff">-
+</td>
+<td style="background:#000;color:#fff">-
+</td>
+<td style="background:#000;color:#fff">Dark
+</td>
+<td style="background:#000;color:#fff">Electricity
+</td>
+<td style="background:#000;color:#fff"><span style="color:#f22">Wind</span>
+</td></tr></tbody></table>
+</td></tr></tbody></table>
+<table class="customtable" width="100%">
+<tbody><tr>
+<th colspan="4" style="background: #FFE600;color: #000"><a href="/wiki/List_of_Persona_4_Skills" title="List of Persona 4 Skills"><span style="color:#000">List of Skills</span></a>
+</th></tr>
+<tr>
+<th style="background:#000;color:#fff">Skill
+</th>
+<th style="background:#000;color:#fff">Cost
+</th>
+<th style="background:#000;color:#fff">Effect
+</th>
+<th style="background:#000;color:#fff">Level
+</th></tr>
+<tr>
+<th style="background:#000;color:#fff"><a href="/wiki/Zio" title="Zio">Zio</a>
+</th>
+<td style="background:#222">4 SP
+</td>
+<td style="background:#222;text-align:left;padding-left:5px">Deals light Elec damage to 1 foe.
+</td>
+<td style="background:#222">Innate
+</td></tr>
+<tr>
+<th style="background:#000;color:#fff"><a href="/wiki/Cleave" title="Cleave">Cleave</a>
+</th>
+<td style="background:#282828">5% HP
+</td>
+<td style="background:#282828;text-align:left;padding-left:5px">Deals light Phys damage to 1 foe.
+</td>
+<td style="background:#282828">Innate
+</td></tr>
+<tr>
+<th style="background:#000;color:#fff"><a href="/wiki/Rakukaja" title="Rakukaja">Rakukaja</a>
+</th>
+<td style="background:#222">12 SP
+</td>
+<td style="background:#222;text-align:left;padding-left:5px">Increases 1 ally's Defense for 3 turns.
+</td>
+<td style="background:#222">Innate
+</td></tr>
+<tr>
+<th style="background:#000;color:#fff"><a href="/wiki/Rakunda" title="Rakunda">Rakunda</a>
+</th>
+<td style="background:#282828">12 SP
+</td>
+<td style="background:#282828;text-align:left;padding-left:5px">Decreases 1 foe's Defense for 3 turns.
+</td>
+<td style="background:#282828">3
+</td></tr>
+<tr>
+<th style="background:#000;color:#fff"><a href="/wiki/Tarukaja" title="Tarukaja">Tarukaja</a>
+</th>
+<td style="background:#222">12 SP
+</td>
+<td style="background:#222;text-align:left;padding-left:5px">Increases 1 ally's Attack for 3 turns.
+</td>
+<td style="background:#222">5
+</td></tr></tbody></table>
+</td></tr></tbody></table>
+<table align="center" style="min-width:650px;text-align:center; background: #222; border:2px solid #FFE600; border-radius:10px; font-size:75%; font-family:verdana;">
+<tbody><tr>
+<td>
+<table cellpadding="0" cellspacing="0" style="width:100%;background:transparent">
+<tbody><tr>
+<td>
+<table class="customtable" width="100%">
+<tbody><tr>
+<th style="background: #FFE600;color: #000"><a href="/wiki/Arcana" title="Arcana"><span style="color:#000">Arcana</span></a>
+</th>
+<th style="background: #FFE600;color: #000" width="50px">Level
+</th>
+<td rowspan="2" style="padding:0" width="324px">
+<table cellpadding="0" cellspacing="2" style="background:transparent;font-size:11px;font-family:monospace;letter-spacing:-1px;line-height:0.8">
+<tbody><tr>
+<td style="color:#ffdf2d">Strength
+</td>
+<td style="text-align:right;padding:0 3px" width="17px">3
+</td>
+<td style="border-radius:10px;background-color:#000;background:linear-gradient(90deg, #2c2a46, #000);width:240.6px"><div style="overflow:hidden"><div style="float:left;border-top:5px solid #ffff85;width:7.2px"></div><div style="float:left;border-top:5px solid transparent;width:230.4px"></div></div>
+</td></tr>
+<tr>
+<td style="color:#ffdf2d">Magic
+</td>
+<td style="text-align:right;padding:0 3px" width="17px">2
+</td>
+<td style="border-radius:10px;background-color:#000;background:linear-gradient(90deg, #2c2a46, #000);width:240.6px"><div style="overflow:hidden"><div style="float:left;border-top:5px solid #ffff85;width:4.8px"></div><div style="float:left;border-top:5px solid transparent;width:232.8px"></div></div>
+</td></tr>
+<tr>
+<td style="color:#ffdf2d">Endurance
+</td>
+<td style="text-align:right;padding:0 3px" width="17px">2
+</td>
+<td style="border-radius:10px;background-color:#000;background:linear-gradient(90deg, #2c2a46, #000);width:240.6px"><div style="overflow:hidden"><div style="float:left;border-top:5px solid #ffff85;width:4.8px"></div><div style="float:left;border-top:5px solid transparent;width:232.8px"></div></div>
+</td></tr>
+<tr>
+<td style="color:#ffdf2d">Agility
+</td>
+<td style="text-align:right;padding:0 3px" width="17px">3
+</td>
+<td style="border-radius:10px;background-color:#000;background:linear-gradient(90deg, #2c2a46, #000);width:240.6px"><div style="overflow:hidden"><div style="float:left;border-top:5px solid #ffff85;width:7.2px"></div><div style="float:left;border-top:5px solid transparent;width:230.4px"></div></div>
+</td></tr>
+<tr>
+<td style="color:#ffdf2d">Luck
+</td>
+<td style="text-align:right;padding:0 3px" width="17px">2
+</td>
+<td style="border-radius:10px;background-color:#000;background:linear-gradient(90deg, #2c2a46, #000);width:240.6px"><div style="overflow:hidden"><div style="float:left;border-top:5px solid #ffff85;width:4.8px"></div><div style="float:left;border-top:5px solid transparent;width:232.8px"></div></div>
+</td></tr>
+</tbody></table>
+</td></tr>
+<tr>
+<td style="background:#000;color:#fff"><a href="/wiki/Fool_Arcana" title="Fool Arcana">Fool</a>
+</td>
+<td style="background:#000;color:#fff">1
+</td></tr></tbody></table>
+<table class="customtable" width="100%">
+<tbody><tr>
+<th style="background: #FFE600;color: #000">Inherit
+</th>
+<th style="background: #FFE600;color: #000">Reflects
+</th>
+<th style="background: #FFE600;color: #000">Absorbs
+</th>
+<th style="background: #FFE600;color: #000">Block
+</th>
+<th style="background: #FFE600;color: #000">Resists
+</th>
+<th style="background: #FFE600;color: #000">Weak
+</th></tr>
+<tr>
+<td style="background:#000;color:#fff">Electricity
+</td>
+<td style="background:#000;color:#fff">-
+</td>
+<td style="background:#000;color:#fff">-
+</td>
+<td style="background:#000;color:#fff">Dark
+</td>
+<td style="background:#000;color:#fff">Electricity
+</td>
+<td style="background:#000;color:#fff"><span style="color:#f22">Wind</span>
+</td></tr></tbody></table>
+</td></tr></tbody></table>
+<table class="customtable" width="100%">
+<tbody><tr>
+<th colspan="4" style="background: #FFE600;color: #000"><a href="/wiki/List_of_Persona_4_Skills" title="List of Persona 4 Skills"><span style="color:#000">List of Skills</span></a>
+</th></tr>
+<tr>
+<th style="background:#000;color:#fff">Skill
+</th>
+<th style="background:#000;color:#fff">Cost
+</th>
+<th style="background:#000;color:#fff">Effect
+</th>
+<th style="background:#000;color:#fff">Level
+</th></tr>
+<tr>
+<th style="background:#000;color:#fff"><a href="/wiki/Zio" title="Zio">Zio</a>
+</th>
+<td style="background:#222">4 SP
+</td>
+<td style="background:#222;text-align:left;padding-left:5px">Deals light Elec damage to 1 foe.
+</td>
+<td style="background:#222">Innate
+</td></tr>
+<tr>
+<th style="background:#000;color:#fff"><a href="/wiki/Cleave" title="Cleave">Cleave</a>
+</th>
+<td style="background:#757575">5% HP
+</td>
+<td style="background:#757575;text-align:left;padding-left:5px">Deals light Phys damage to 1 foe.
+</td>
+<td style="background:#757575">Innate
+</td></tr>
+<tr>
+<th style="background:#000;color:#fff"><a href="/wiki/Rakukaja" title="Rakukaja">Rakukaja</a>
+</th>
+<td style="background:#222">12 SP
+</td>
+<td style="background:#222;text-align:left;padding-left:5px">Increases 1 ally's Defense for 3 turns.
+</td>
+<td style="background:#222">Innate
+</td></tr>
+<tr>
+<th style="background:#000;color:#fff"><a href="/wiki/Rakunda" title="Rakunda">Rakunda</a>
+</th>
+<td style="background:#757575">12 SP
+</td>
+<td style="background:#757575;text-align:left;padding-left:5px">Decreases 1 foe's Defense for 3 turns.
+</td>
+<td style="background:#757575">3
+</td></tr>
+<tr>
+<th style="background:#000;color:#fff"><a href="/wiki/Tarukaja" title="Tarukaja">Tarukaja</a>
+</th>
+<td style="background:#222">12 SP
+</td>
+<td style="background:#222;text-align:left;padding-left:5px">Increases 1 ally's Attack for 3 turns.
+</td>
+<td style="background:#222">5
+</td></tr></tbody></table>
+</td></tr></tbody></table>
+Terminate batch job (Y/N)? 
+
+C:\Repos\persona4-data>

@@ -1,0 +1,335 @@
+$computer-monitor-shell: #5e5b5b;
+$box-shadow: #363432;
+$computer-monitor-bg: black;
+$rubber-ducky-body: #f5d142;
+$rubber-ducky-beak: #f59942;
+$rubber-ducky-eye-outline: #3b3937;
+$rubber-ducky-eye-white: #ffffff;
+$post-it-note: #ebd288;
+$post-it-text-color: #000000;
+$mascot-body-color: #e2b35d;
+$mascot-pupil-color: #8d36bf;
+$mascot-mouth-color: #d9a932;
+$mascot-speech-bubble: #f7f6ca;
+$mascot-speech-bubble-text: #000000;
+$mascot-close-background: #e0ddd3;
+
+.computer-monitor-old {
+	width: 900px;
+	height: 600px;
+	background-color: $computer-monitor-shell;
+	padding: 30px;
+	border-radius: 1%;
+}
+
+.computer-screen {
+	width: 85%;
+	height: 75%;
+	background-color: $computer-monitor-bg;
+	border: 30px solid $computer-monitor-shell;
+	border-radius: 1%;
+	z-index: 1;
+	margin: auto;
+	box-shadow: 10px -5px 3px $box-shadow;
+}
+
+.computer-text {
+	font-family: Arial;
+	padding-top: 55px;
+	padding-left: 10px;
+	position: absolute;
+	top: 0px;
+	color: white;
+	border-radius: 1%;
+}
+
+.computer-stand {
+	margin: auto;
+	z-index: -1;
+}
+
+.computer-stand-neck {
+	width: 200px;
+	height: 100px;
+	background-color: $computer-monitor-shell;
+	margin: auto;
+	box-shadow: 9px 0px 1px $box-shadow;
+	z-index: -1;
+}
+
+.computer-stand-base {
+	width: 300px;
+	height: 50px;
+	background-color: $computer-monitor-shell;
+	border-radius: 15px;
+	margin: auto;
+	box-shadow: 10px -2px 3px $box-shadow;
+}
+
+/* This is the vertical positining of all the post-its */
+.post-it-notes {
+	position: relative;
+	top: -20px;
+	color: $post-it-text-color;
+}
+
+a:link {
+	color: $post-it-text-color;
+}
+
+a:visited {
+	color: $post-it-text-color;
+}
+
+/* mouse over link */
+a:hover {
+	color: rgb(94, 213, 218);
+}
+
+.post-it-note {
+	width: 120px;
+	height: 80px;
+	background-color: $post-it-note;
+	z-index: 5;
+	position: absolute;
+	border: 1px solid grey;
+	font-family: "Kalam", cursive;
+	cursor: pointer;
+}
+
+.projects-link {
+	left: 8%;
+	transform: rotate(3deg);
+}
+
+#projects {
+	font-size: 38px;
+	transform: rotate(-9deg);
+}
+
+.github-link {
+	left: 35%;
+	transform: rotate(-3deg);
+}
+
+#github {
+	font-size: 35px;
+	padding-left: 10px;
+	padding-top: 15px;
+	line-height: 1.2;
+}
+
+.top-secret-link {
+	left: 70%;
+	transform: rotate(-5deg);
+}
+
+#top-secret {
+	font-size: 29px;
+	line-height: 1.2;
+	padding-left: 5px;
+	padding-top: 5px;
+	transform: rotate(3deg);
+}
+
+.mascot {
+	z-index: 5;
+	position: absolute;
+	cursor: default;
+}
+
+.mascot-body {
+	font-size: 10em;
+	color: $mascot-body-color;
+	text-shadow: 1px 1px 4px $box-shadow;
+	z-index: 5;
+	padding-bottom: 30px;
+	position: relative;
+	bottom: 190px;
+}
+
+.mascot-eye {
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	background-color: $rubber-ducky-eye-white;
+	border: 0px solid $rubber-ducky-eye-outline;
+	box-shadow: 1px 1px 3px $box-shadow;
+}
+
+.mascot-eye-left {
+	left: 40px;
+	bottom: 130px;
+}
+
+.mascot-eye-right {
+	left: 76px;
+	bottom: 130px;
+}
+
+.mascot-pupil {
+	position: relative;
+	width: 10px;
+	height: 10px;
+	left: 8px;
+	top: 7px;
+	border-radius: 50%;
+	background-color: #000000;
+	border: solid black;
+	border-width: 6px 5px 3px 6px;
+}
+
+.mascot-mouth {
+	position: absolute;
+	left: 60px;
+	bottom: 100px;
+	width: 20px;
+	height: 17px;
+	border-radius: 0 0% 50% 50%;
+	border-top: 1px solid transparent;
+	border-left: 1px solid transparent;
+	border-right: 3px solid $mascot-mouth-color;
+	border-bottom: 3px solid $mascot-mouth-color;
+	transform: rotate(45deg);
+}
+
+.mascot-speech-bubble {
+	width: 150px;
+	height: 100px;
+	background-color: $mascot-speech-bubble;
+	position: relative;
+	left: 20px;
+	bottom: 475px;
+	border-radius: 30%;
+	box-shadow: -2px 1px 3px $box-shadow;
+}
+
+.mascot-speech-bubble-text {
+	color: $mascot-speech-bubble-text;
+	z-index: 5;
+	padding: 13px;
+}
+
+.mascot-close {
+	width: 2ch;
+	height: 2ch;
+	position: absolute;
+	left: 133px;
+	top: 0px;
+	border-radius: 50%;
+	background-color: $mascot-close-background;
+	text-align: center;
+	box-shadow: -2px 1px 3px $box-shadow;
+	cursor: pointer;
+}
+
+.mascot-close-text {
+	font-size: 0.9rem;
+	font-family: Arial;
+	font-weight: bold;
+}
+
+.mascot-speech-bubble-line {
+	width: 28px;
+	height: 40px;
+	position: absolute;
+	left: 80px;
+	top: 76px;
+	border-radius: 0% 50% 50% 0%;
+	border-top: 1px solid transparent;
+	border-left: 1px solid transparent;
+	border-right: 18px solid $mascot-speech-bubble;
+	border-bottom: 0px solid $mascot-speech-bubble;
+	transform: rotate(5deg);
+}
+
+.rubber-ducky {
+	position: relative;
+	left: 10%;
+	bottom: 112px;
+	z-index: 5;
+}
+
+.rubber-ducky-head {
+	width: 65px;
+	height: 65px;
+	border-top-left-radius: 45px;
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 47px;
+	border-bottom-left-radius: 50px;
+	background-color: $rubber-ducky-body;
+	position: relative;
+	left: 70px;
+	top: 15px;
+	box-shadow: -2px 1px 3px $box-shadow;
+	z-index: 3;
+	cursor: pointer;
+}
+
+.rubber-ducky-beak {
+	width: 25px;
+	height: 15px;
+	background-color: $rubber-ducky-beak;
+	border-top-left-radius: 5%;
+	border-top-right-radius: 45%;
+	border-bottom-right-radius: 45%;
+	border-bottom-left-radius: 5%;
+	transform: rotate(-5deg);
+	position: relative;
+	top: 35px;
+	left: 57px;
+}
+
+.rubber-ducky-eye {
+	width: 15px;
+	height: 15px;
+	background-color: $rubber-ducky-eye-white;
+	border: 3px solid $rubber-ducky-eye-outline;
+	border-radius: 50%;
+	position: relative;
+	left: 32px;
+	top: 5px;
+}
+
+.rubber-ducky-pupil {
+	width: 2px;
+	height: 2px;
+	background-color: $rubber-ducky-eye-white;
+	border: solid $rubber-ducky-eye-outline;
+	border-width: 7px 5px 2px 5px;
+	border-radius: 50%;
+	position: relative;
+	left: 2px;
+	top: 4px;
+}
+
+.rubber-ducky-body {
+	width: 150px;
+	height: 70px;
+	background-color: $rubber-ducky-body;
+	border-top-left-radius: 10%;
+	border-top-right-radius: 47%;
+	border-bottom-right-radius: 33%;
+	border-bottom-left-radius: 50%;
+	transform: rotate(2deg);
+	box-shadow: -2px 0px 3px $box-shadow;
+	cursor: pointer;
+}
+
+.rubber-ducky-wing {
+	width: 50px;
+	height: 25px;
+	background-color: rubber-ducky-body;
+	border: 0px solid $rubber-ducky-beak;
+	position: relative;
+	left: 30%;
+	top: 30%;
+	border-top-left-radius: 10%;
+	border-top-right-radius: 47%;
+	border-bottom-right-radius: 33%;
+	border-bottom-left-radius: 50%;
+	transform: rotate(3deg);
+	box-shadow: -2px 1px 3px $box-shadow;
+	z-index: 3;
+}

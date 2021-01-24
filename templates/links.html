@@ -1,0 +1,21 @@
+{% extends "tv.html" %}
+{% block title %}{% endblock %}
+{% block head %}
+    {{ super() }}
+    <style type="text/css">
+        .important { color: #336699; }
+    </style>
+{% endblock %}
+{% block content %}
+<div class="link-choice">
+	<span class="header">Whose link?</span>
+	<div class="link-choice-data columns">
+		{% for name in names %}
+		<a href="link/{{ name }}">{{ name }}</a><br />
+		{% endfor %}
+	</div>
+</div>
+{% endblock %}
+
+
+
