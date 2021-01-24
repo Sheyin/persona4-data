@@ -204,3 +204,7 @@ def change_color(text):
 
 # I want this to run on startup every time so it prevents errors
 tidy_link_data()
+
+
+if __name__ == '__main__':
+    app.run(debug=True, port=80, host='0.0.0.0')
