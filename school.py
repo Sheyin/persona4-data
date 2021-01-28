@@ -217,8 +217,8 @@ school_data = {
             },
             "day2": {
                 "date": "10/15",
-                        "question1_question": "Q1 - How short was history’s shortest war?",
-                        "question1_answer": "40 Minutes. (1st Choice)",
+                "question1_question": "Q1 - How short was history’s shortest war?",
+                "question1_answer": "40 Minutes. (1st Choice)",
                 "question2_question": "Venison is the meat of what animal?",
                 "question2_answer": "All of the above. (4th Choice)"
             },

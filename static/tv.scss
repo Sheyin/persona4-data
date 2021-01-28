@@ -179,7 +179,7 @@ p {
 
 .columns {
 	//margin-left: 20%;
-	margin-top: 10vh;
+	margin-top: 3vh;
 	column-count: 2;
 	column-width: 100%;
 	font-size: 1.3em;
@@ -202,6 +202,10 @@ a {
 	font-size: 75%;
 	font-family: verdana;
 	margin: auto;
+}
+
+.link-name {
+	margin-bottom: 10vh;
 }
 
 form {

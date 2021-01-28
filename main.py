@@ -96,9 +96,11 @@ def social_links():
     for name in name_list:
         arcana = link_data[name]["arcana"]
         name = name.capitalize()
-        namestring = name + " (" + arcana + ")"
-        names.append(namestring)
-    return render_template('links.html', title="Social Links", names=names)
+        data = (name, arcana)
+        names.append(data)
+    return render_template('links.html', title="Social Links",
+                           names=names
+                           )
 
 
 @app.route('/link/<name_choice>', methods=['GET'])

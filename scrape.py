@@ -5,12 +5,11 @@ from personadata import list_of_persona_names
 
 def get_info_for(persona):
     # Format input, make sure it's spelled and capitalized correctly, etc
-    persona = persona.rstrip()
-    formattedInput = persona.capitalize()
-    print("format: " + formattedInput)
+    persona = format_persona_input(persona)
+    print("Persona received: ===" + persona + "===")
 
     # Double check it against a list of properly spelled names?
-    if is_valid_persona(formattedInput):
+    if is_valid_persona(persona):
         # Here, we're just importing both Beautiful Soup and the Requests library
         page_link = 'https://megamitensei.fandom.com/wiki/' + persona
         # https://megamitensei.fandom.com/wiki/Kali#Persona_4
@@ -40,6 +39,20 @@ def is_valid_persona(input):
         return True
     else:
         return False
+
+
+# Format input, make sure it's spelled and capitalized correctly, etc
+def format_persona_input(persona):
+    persona = persona.rstrip()
+    # in case of multi-word names
+    namelist = persona.split(' ')
+    formattedInput = ""
+    for _ in namelist:
+        if _ == namelist[0]:
+            formattedInput = namelist[0]
+        else:
+            formattedInput += " " + _.capitalize()
+    return formattedInput.rstrip()
 
 
 if __name__ == "__main__":

@@ -11,7 +11,7 @@
 	<span class="header">Whose link?</span>
 	<div class="link-choice-data columns">
 		{% for name in names %}
-		<a href="link/{{ name }}">{{ name }}</a><br />
+		<a href="link/{{ name[0] }}" class="link-name">{{ name[0] }} - {{ name[1] }}</a><br /><br />
 		{% endfor %}
 	</div>
 </div>
