@@ -22,8 +22,8 @@ def get_info_for(persona):
         stats = p4header.find_next('table')
 
         type(stats)
-        # Strip all the formatting
         """
+        # Strip all the formatting
         for tag in stats:
             for attribute in ["class", "id", "name", "style"]:
                 del tag[attribute]
@@ -37,7 +37,7 @@ def get_info_for(persona):
 # Helper function to populate the attribution url
 # Should only be called after a valid result was already found and returned.
 def get_url_for(persona):
-    return 'https://megamitensei.fandom.com/wiki/' + persona
+    return 'https://megamitensei.fandom.com/wiki/' + format_persona_input(persona)
 
 
 def is_valid_persona(input):
@@ -47,7 +47,8 @@ def is_valid_persona(input):
         return False
 
 
-# Format input, make sure it's spelled and capitalized correctly, etc
+# This takes the name of a persona (input/string) and makes sure it is formatted
+# to work correctly with the other functions (first letter of each word capitalized, no trailing spaces)
 def format_persona_input(persona):
     persona = persona.rstrip()
     # in case of multi-word names
@@ -55,7 +56,7 @@ def format_persona_input(persona):
     formattedInput = ""
     for _ in namelist:
         if _ == namelist[0]:
-            formattedInput = namelist[0]
+            formattedInput = namelist[0].capitalize()
         else:
             formattedInput += " " + _.capitalize()
     return formattedInput.rstrip()

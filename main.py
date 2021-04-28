@@ -3,7 +3,7 @@ from flask import Flask, render_template, request
 from school import school_data
 from link import link_data
 from lunch import lunch
-from scrape import get_info_for, get_url_for
+from scrape import get_info_for, get_url_for, format_persona_input
 import re
 
 
@@ -152,7 +152,8 @@ def persona_search(persona=""):
         persona = request.args.get('persona', '')
         result = str(get_info_for(persona))
         return render_template('persona_search.html',
-                               title="Stats for " + persona,
+                               title="Stats for " +
+                               format_persona_input(persona),
                                # result=result
                                result=change_color(result),
                                url=get_url_for(persona)
