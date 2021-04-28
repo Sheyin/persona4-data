@@ -541,7 +541,7 @@ link_data = {
                     },
                     {
                         "header": "Empress Rank 10: Trumpeter with Mind Charge",
-                        "data": "Here it is - the final rank. To max out your Empress social link with Margaret, simply present her with a Trumpeter (Judgment) with the Mind Charge Skill. You’ll need to be level 67 to make this fusion happen, but once you’re that level, it’s not too tough.\nHere are our solutions: \nDo a large fusion of Matador (Death), White Rider (Death), Daisoujou (Hierophant), Pabilsag (Emperor), Taown (Hanged Man) and Taotie (Tower). Taotie has Mind Charge from Level 38. \nMargaret now trusts you deeply, and you’ve shown some seriously creative Persona fusion skills. She’ll reward you with the Spiral Brooch item that’ll let you fuse Isis, but that’s not all! Check in with Margaret after the s-link max rank to receive a new costume - the Deep Blue Clothes."
+                        "data": "Here it is - the final rank. To max out your Empress social link with Margaret, simply present her with a Trumpeter (Judgment) with the Mind Charge Skill. You’ll need to be level 67 to make this fusion happen, but once you’re that level, it’s not too tough.\nHere are our solutions: \nDo a large fusion of Matador (Death), White Rider (Death), Daisoujou (Hierophant), Pabilsag (Emperor), Taowu (Hanged Man) and Taotie (Tower). Taotie has Mind Charge from Level 38. \nMargaret now trusts you deeply, and you’ve shown some seriously creative Persona fusion skills. She’ll reward you with the Spiral Brooch item that’ll let you fuse Isis, but that’s not all! Check in with Margaret after the s-link max rank to receive a new costume - the Deep Blue Clothes."
                     }
                 ]
     },

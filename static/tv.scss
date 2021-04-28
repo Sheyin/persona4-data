@@ -89,12 +89,21 @@ iframe {
 	border-radius: 20%;
 	width: 100%;
 	height: 630px;
-	margin: auto;
 	border: 0;
+	//margin: auto;
+	//border: solid 1px red;
 	//border-top: 7px solid $tv-color;
 	//border-left: 10px solid $tv-color;
 	//border-right: 10px solid $tv-color;
 	//border-bottom: 7px solid $tv-color;
+}
+
+#calculator-attribution {
+	font-size: -1;
+}
+
+#persona-data-attribution {
+	font-size: -1;
 }
 
 .side-controls-box {
@@ -165,6 +174,10 @@ iframe {
 	margin-top: 20%;
 }
 
+.school-choice-block {
+	margin-top: 10px;
+}
+
 p {
 	margin-left: 0px;
 	font-size: 1.3em;
@@ -215,4 +228,23 @@ form {
 
 #quests {
 	display: none;
+}
+
+/* This is only shown when one searches for a persona */
+#search-results {
+	padding-left: 10px;
+	display: grid;
+	grid-template-columns: 33% 33% auto;
+	grid-template-rows: auto;
+	grid-gap: 10px 20px;
+	max-height: 50%;
+	justify-items: start;
+}
+
+/* Individual results that show up in search-results */
+.search-suggestion {
+	border: 1px dotted blue;
+	border-radius: 10px;
+	padding: 3px;
+	cursor: pointer;
 }

@@ -3,11 +3,13 @@ from flask import Flask, render_template, request
 from school import school_data
 from link import link_data
 from lunch import lunch
-from scrape import get_info_for
+from scrape import get_info_for, get_url_for
 import re
 
 
 app = Flask(__name__)
+# This allows the server to reload when changes are detected
+app.config['DEBUG'] = True
 
 
 @app.route('/')
@@ -152,7 +154,8 @@ def persona_search(persona=""):
         return render_template('persona_search.html',
                                title="Stats for " + persona,
                                # result=result
-                               result=change_color(result)
+                               result=change_color(result),
+                               url=get_url_for(persona)
                                )
 
 
@@ -209,4 +212,5 @@ tidy_link_data()
 
 
 if __name__ == '__main__':
-    app.run(debug=True, port=81, host='0.0.0.0')
+    #app.run(debug=True, port=81, host='0.0.0.0')
+    app.run(debug=True)

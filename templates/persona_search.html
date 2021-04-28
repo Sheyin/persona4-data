@@ -6,15 +6,21 @@
 {% block content %}
 	<div class="search">
 		<span class="header">{{ title }}</span><br />
-		<form action = "/persona" method="get">
-			Persona to search for: <input name="persona" id="persona" type="text" />
+		<form action="/persona" method="get" id="persona-search">
+			Persona to search for: <input name="persona" id="persona" type="text" onInput="suggestSearchResults(this)"/>
 			<input type="submit" value="Submit" />
 		</form>
+	</div>
+
+	<div id="search-results-container">
+		<div id="search-results"></div>
 	</div>
 
 	{% if result %}
 	<div class="result">
 		{{ result | safe }}
+		<br />
+		<span id="persona-data-attribution">Source: <a href="{{ url }}" target="_new">Megami Tensei Wiki</a></span>
 	</div>
 	{% endif %}
 

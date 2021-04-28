@@ -34,6 +34,12 @@ def get_info_for(persona):
         return errorString
 
 
+# Helper function to populate the attribution url
+# Should only be called after a valid result was already found and returned.
+def get_url_for(persona):
+    return 'https://megamitensei.fandom.com/wiki/' + persona
+
+
 def is_valid_persona(input):
     if input in list_of_persona_names:
         return True
