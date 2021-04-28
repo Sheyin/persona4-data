@@ -17,10 +17,13 @@ Of course, it has taken me _much_ longer to work on this site than I have been a
 ## Progress / Bugs
 - All the links are functional, but some areas still need to be refined.  
 - Lunch data needs to be formatted and organized.
-- Some of the school questions may not be linked to the correct dates.  
+- Some of the school questions may not be linked to the correct dates.  (This requires some testing)
 - Search is working, but the results are sometimes improperly formatted. (Unsure if this is due to the source, formatting on my end, or both)
 - Clipping on the calculator iframe.  I haven't figured out a solution to this yet.
 - Some of the information may be incorrect (ex. lunch favorites/dates) - this was due to some scarcity of information (and really isn't that significant).  As this is an older/unchanging game, most of the data should be correct, assuming it was displayed correctly here.
+- Quest data - no progress made on this yet.  
+- Formatting may look odd depending on different orientation / resolution - I haven't properly tweaked this yet, but it's been good enough so far.
+
 
 ## Attribution
 - https://arantius.github.io/persona-fusion-calculator/4golden.html#/list/level
