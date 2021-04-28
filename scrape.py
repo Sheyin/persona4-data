@@ -1,6 +1,6 @@
 from bs4 import BeautifulSoup
 import requests
-from personadata import list_of_persona_names
+import data
 
 
 def get_info_for(persona):
@@ -41,7 +41,7 @@ def get_url_for(persona):
 
 
 def is_valid_persona(input):
-    if input in list_of_persona_names:
+    if input in data.list_of_persona_names:
         return True
     else:
         return False

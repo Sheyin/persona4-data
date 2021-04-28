@@ -1,11 +1,8 @@
 
 from flask import Flask, render_template, request
-from school import school_data
-from link import link_data
-from lunch import lunch
-from scrape import get_info_for, get_url_for, format_persona_input
+import data
 import re
-
+from scrape import get_info_for, get_url_for, format_persona_input
 
 app = Flask(__name__)
 # This allows the server to reload when changes are detected
@@ -27,10 +24,10 @@ def school_pick_date():
 @app.route('/daily/<date>', methods=['GET'])
 def daily(date="april_may"):
     if date in ['april_may', 'june_july', 'sept_oct', 'nov_dec', 'jan_feb']:
-        data = school_data[date]
+        info = data.school_data[date]
         return render_template('daily.html',
-                               date=data["date"],
-                               daily_questions=data["data_school"],
+                               date=info["date"],
+                               daily_questions=info["data_school"],
                                )
     else:
         return "Error! You didn't pick a date range!"
@@ -39,13 +36,13 @@ def daily(date="april_may"):
 @app.route('/exam/<date>', methods=['GET'])
 def exam(date="april_may"):
     if date in ['april_may', 'june_july', 'sept_oct', 'nov_dec', 'jan_feb']:
-        data = school_data[date]
-        exam_data = simplify_exam_data(school_data[date]["data_exam"])
+        info = data.school_data[date]
+        #exam_data = simplify_exam_data(data.school_data[date]["data_exam"])
         return render_template('exam.html',
-                               date=data["date"],
-                               exam_header=data["data_exam"]["header"],
+                               date=info["date"],
+                               exam_header=info["data_exam"]["header"],
                                exam_data=simplify_exam_data(
-                                   school_data[date]["data_exam"]),
+                                   data.school_data[date]["data_exam"]),
                                )
     else:
         return "Error! You didn't pick a date range!"
@@ -93,13 +90,13 @@ def simplify_exam_data(exam_data):
 
 @app.route('/links', methods=['GET'])
 def social_links():
-    name_list = link_data.keys()
+    name_list = data.link_data.keys()
     names = []
     for name in name_list:
-        arcana = link_data[name]["arcana"]
+        arcana = data.link_data[name]["arcana"]
         name = name.capitalize()
-        data = (name, arcana)
-        names.append(data)
+        info = (name, arcana)
+        names.append(info)
     return render_template('links.html', title="Social Links",
                            names=names
                            )
@@ -108,7 +105,7 @@ def social_links():
 @app.route('/link/<name_choice>', methods=['GET'])
 def link(name_choice):
     name = name_choice.lower()
-    info = link_data[name]
+    info = data.link_data[name]
     # data = tidy_link_data(info["data"])
     # mostly destructuring the data for easier use in template
     return render_template('link.html',
@@ -132,10 +129,10 @@ def hello_world():
 @app.route('/lunch', methods=['GET'])
 def lunch_render():
     return render_template('lunch.html',
-                           title=lunch["header"],
-                           lunches=lunch["data"],
-                           date_title=lunch["dates_header"],
-                           lunch_dates=lunch["dates_data"]
+                           title=data.lunch["header"],
+                           lunches=data.lunch["data"],
+                           date_title=data.lunch["dates_header"],
+                           lunch_dates=data.lunch["dates_data"]
                            )
 
 
@@ -170,10 +167,11 @@ def persona_search(persona=""):
 
 
 def tidy_link_data():
-    name_list = link_data.keys()
+    name_list = data.link_data.keys()
     for name in name_list:
-        link_data[name]["schedule"] = link_data[name]["schedule"].split('\n')
-        personal_link_info = link_data[name]["data"]
+        data.link_data[name]["schedule"] = data.link_data[name]["schedule"].split(
+            '\n')
+        personal_link_info = data.link_data[name]["data"]
         # the data is an array of dicts with header/data properties each element
         for rank in personal_link_info:
             rank["data"] = rank["data"].split('\n')

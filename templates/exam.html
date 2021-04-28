@@ -8,7 +8,7 @@
 {% endblock %}
 {% block content %}
 <div class="exam-questions">
-	<span class="header">{{date}}: {{exam_header}}</span>
+	<header>{{date}}: {{exam_header}}</header>
 	{% for eachday in exam_data %}
 	<div class="exam-question-day-block data">
 		<div class="exam-question-day-date">{{ eachday["date"] }}</div>
