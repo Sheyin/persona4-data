@@ -11,12 +11,12 @@ Of course, it has taken me _much_ longer to work on this site than I have been a
 - All the information/links I've needed to look up during a play session is all in one place, including social link guides, school questions, lunch ingredients, and a fusion calculator.
 
 ## Progress / Bugs
--All the links are functional, but some areas still need to be refined.  
--Lunch data needs to be formatted and organized.
--Some of the school questions may not be linked to the correct dates.  
--Search is working, but the results are sometimes improperly formatted. (Unsure if this is due to the source, formatting on my end, or both)
--Odd clipping on the calculator page.  I haven't figured out a solution to this yet.
--Some of the information may be incorrect (ex. lunch favorites/dates) - this was due to some scarcity of information (and really isn't that significant).  As this is an older/unchanging game, most of the data should be correct, assuming it was displayed correctly here.
+- All the links are functional, but some areas still need to be refined.  
+- Lunch data needs to be formatted and organized.
+- Some of the school questions may not be linked to the correct dates.  
+- Search is working, but the results are sometimes improperly formatted. (Unsure if this is due to the source, formatting on my end, or both)
+- Odd clipping on the calculator page.  I haven't figured out a solution to this yet.
+- Some of the information may be incorrect (ex. lunch favorites/dates) - this was due to some scarcity of information (and really isn't that significant).  As this is an older/unchanging game, most of the data should be correct, assuming it was displayed correctly here.
 
 ## Attribution
 - https://arantius.github.io/persona-fusion-calculator/4golden.html#/list/level
