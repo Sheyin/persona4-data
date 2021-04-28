@@ -5,7 +5,7 @@
 {% endblock %}
 {% block content %}
 	<div class="search">
-		<span class="header">{{ title }}</span><br />
+		<header>{{ title }}</header><br />
 		<form action="/persona" method="get" id="persona-search">
 			Persona to search for: <input name="persona" id="persona" type="text" onInput="suggestSearchResults(this)"/>
 			<input type="submit" value="Submit" />
@@ -20,7 +20,7 @@
 	<div class="result">
 		{{ result | safe }}
 		<br />
-		<span id="persona-data-attribution">Source: <a href="{{ url }}" target="_new">Megami Tensei Wiki</a></span>
+		<footer>Source: <a href="{{ url }}" target="_new">Megami Tensei Wiki</a></footer>
 	</div>
 	{% endif %}
 

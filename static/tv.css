@@ -42,7 +42,7 @@ body {
   box-shadow: 10px -5px 3px #877900;
   border: solid #000000;
   border-width: 5px 20px 5px 2s0px;
-  padding: 20px;
+  padding: 15px;
   border-radius: 9%;
   float: left;
 }
@@ -81,11 +81,7 @@ iframe {
   border: 0;
 }
 
-#calculator-attribution {
-  font-size: -1;
-}
-
-#persona-data-attribution {
+footer {
   font-size: -1;
 }
 
@@ -123,12 +119,12 @@ iframe {
   flex-direction: column;
 }
 
-.header {
+header {
   font-size: 2em;
   font-weight: bold;
   text-align: center;
-  margin-top: 5vh;
-  margin-bottom: 3vh;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
 }
 
 .subheader {
@@ -142,11 +138,12 @@ iframe {
   display: flex;
   text-align: left;
   justify-content: space-between;
-  margin-top: 20%;
+  margin-top: 3vh;
 }
 
 .school-choice-block {
   margin-top: 10px;
+  font-size: 3vh;
 }
 
 p {
@@ -156,9 +153,9 @@ p {
 
 .data {
   text-align: left;
-  margin-left: 20px;
+  margin-left: 25px;
   margin-right: 20px;
-  font-size: 1.3em;
+  font-size: 2.1vh;
 }
 
 .columns {
@@ -203,20 +200,22 @@ form {
 /* This is only shown when one searches for a persona */
 #search-results {
   padding-left: 10px;
+  padding-right: 10px;
   display: grid;
   grid-template-columns: 33% 33% auto;
   grid-template-rows: auto;
-  grid-gap: 10px 20px;
+  grid-gap: 15px 20px;
   max-height: 50%;
   justify-items: start;
 }
 
 /* Individual results that show up in search-results */
 .search-suggestion {
-  border: 1px dotted blue;
+  border: 1px solid blue;
   border-radius: 10px;
   padding: 3px;
   cursor: pointer;
+  width: 100%;
 }
 
 /*# sourceMappingURL=tv.css.map */

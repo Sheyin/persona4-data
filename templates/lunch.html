@@ -5,8 +5,8 @@
 {% endblock %}
 {% block content %}
 	<div class="lunch">
-		<span class="header">{{ title }}</span>
-		<div class="lunch-data data">
+		<header>{{ title }}</header>
+		<div class="lunch data">
 			{% for paragraph in lunches %}
 			{{paragraph}}<br />
 			{% endfor %}
@@ -14,8 +14,8 @@
 	</div>
 
 	<div class="lunch-dates">
-		<span class="header">{{ date_title }}</span>
-		<div class="lunch-dates-data columns">
+		<header>{{ date_title }}</header>
+		<div class="lunch columns">
 			{% for date in lunch_dates %}
 			{{date}}<br />
 			{% endfor %}

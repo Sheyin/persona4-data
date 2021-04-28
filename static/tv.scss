@@ -47,14 +47,12 @@ body {
 	min-width: 70%;
 	max-width: 80%;
 	height: 90%;
-	//background-color: $tv-color;
 	background-color: $tv-color;
 	box-shadow: 10px -5px 3px $box-shadow;
 	border: solid $tv-color;
 	border-width: 5px 20px 5px 2s0px;
-	padding: 20px;
+	padding: 15px;
 	border-radius: 9%;
-	//position: relative;
 	float: left;
 }
 
@@ -90,19 +88,9 @@ iframe {
 	width: 100%;
 	height: 630px;
 	border: 0;
-	//margin: auto;
-	//border: solid 1px red;
-	//border-top: 7px solid $tv-color;
-	//border-left: 10px solid $tv-color;
-	//border-right: 10px solid $tv-color;
-	//border-bottom: 7px solid $tv-color;
 }
 
-#calculator-attribution {
-	font-size: -1;
-}
-
-#persona-data-attribution {
+footer {
 	font-size: -1;
 }
 
@@ -111,10 +99,6 @@ iframe {
 	z-index: 3;
 	float: left;
 	padding: 1px;
-	//position: static;
-	//position: relative;
-	//top: -685px;
-	//left: 900px;
 	background-color: $tv-color;
 	border: 10px solid black;
 	border-radius: 15%;
@@ -123,7 +107,6 @@ iframe {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	//flex-wrap: nowrap;
 }
 
 .knob-outer {
@@ -139,8 +122,6 @@ iframe {
 
 .navigation {
 	background-color: $yellow;
-	//position: relative;
-	//top: 60px;
 	margin: 10% 10px 20px 10px;
 	height: 52vh;
 	border-radius: 15%;
@@ -148,16 +129,14 @@ iframe {
 	display: flex;
 	justify-content: space-between;
 	flex-direction: column;
-	//flex-grow: 2;
-	//flex-basis: 90%;
 }
 
-.header {
+header {
 	font-size: 2em;
 	font-weight: bold;
 	text-align: center;
-	margin-top: 5vh;
-	margin-bottom: 3vh;
+	margin-top: 2vh;
+	margin-bottom: 2vh;
 }
 
 .subheader {
@@ -171,11 +150,12 @@ iframe {
 	display: flex;
 	text-align: left;
 	justify-content: space-between;
-	margin-top: 20%;
+	margin-top: 3vh;
 }
 
 .school-choice-block {
 	margin-top: 10px;
+	font-size: 3vh;
 }
 
 p {
@@ -185,9 +165,9 @@ p {
 
 .data {
 	text-align: left;
-	margin-left: 20px;
+	margin-left: 25px;
 	margin-right: 20px;
-	font-size: 1.3em;
+	font-size: 2.1vh;
 }
 
 .columns {
@@ -233,18 +213,20 @@ form {
 /* This is only shown when one searches for a persona */
 #search-results {
 	padding-left: 10px;
+	padding-right: 10px;
 	display: grid;
 	grid-template-columns: 33% 33% auto;
 	grid-template-rows: auto;
-	grid-gap: 10px 20px;
+	grid-gap: 15px 20px;
 	max-height: 50%;
 	justify-items: start;
 }
 
 /* Individual results that show up in search-results */
 .search-suggestion {
-	border: 1px dotted blue;
+	border: 1px solid blue;
 	border-radius: 10px;
 	padding: 3px;
 	cursor: pointer;
+	width: 100%;
 }
